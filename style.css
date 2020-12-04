@@ -1,0 +1,223 @@
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body{
+  background-image: url('https://wallpapercave.com/wp/wp2840961.jpg');
+  background-repeat: no-repeat;
+ background-size: 1390px 660px;
+  font-family: montserrat;
+}
+@supports ((position: -webkit-sticky) or (position: sticky)) {
+  .sticky-top {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+  }
+  /*profile image center*/
+.center{
+	display: block;
+	margin-top: 50px;
+	margin-bottom: 10px;
+	margin-left: auto;
+  	margin-right: auto;
+   	border-radius: 50%;
+  	object-fit:cover;
+  	width:200px;
+   	height: 200px;
+}
+.h2center{
+	color: white;
+	text-align: center;
+	font-weight: bold;
+	font-family:  sans-serif;
+}
+.description{
+	font-family: sans-serif;
+	font-weight: initial;
+	color:white;
+	text-align: center;
+	margin-top: 10px;
+}
+nav{
+ /*background: #f8a193;*/
+  height: 50px;
+  width: 100%;
+}
+label.logo{
+  color: white;
+  font-size: 35px;
+  line-height: 50px;
+  padding: 0 60px;
+  font-weight: bold;
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 50px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+font-weight: bold;
+}
+a.active,a:hover{
+  background: #142f3a;
+  transition: .5s;
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 50px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+@media (max-width: 952px){
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+  	color:#425b5e;
+    font-size: 16px;
+  }
+}
+/*mobile design*/
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background:white;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    color: #f8a193;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+section{
+  background: url(bg1.jpg) no-repeat;
+  background-size: cover;
+  height: calc(100vh - 80px);
+}
+
+/*icon responsive for Laptop devices*/
+
+@media (min-width: 992px) {
+	.icon{
+	border-radius: 20%;
+	display: block;
+	margin-left: 400px;
+  	margin-top: 40px;
+  	padding: 1px;
+  	width:40px;
+   	height: 40px;
+   	position: relative;
+}
+	.col-lg-1 {
+    width: 8.33%;
+     float: left;
+  }
+
+}
+
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+	.icon{
+	border-radius: 20%;
+	display: block;
+	margin-left: 400%;
+  	margin-top: 40px;
+  	padding: 1px;
+  	width:40px;
+   	height: 40px;
+   	position: relative;
+}
+  .col-md-1 {
+    width: 8.33%;
+     float: left;
+  }
+}
+/*Mobile devices*/
+@media (max-width: 767px) {
+	.icon{
+	border-radius: 20%;
+	display: block;
+	margin-left: 370%;
+  	margin-top: 40px;
+  	padding: 1px;
+  	width:40px;
+   	height: 40px;
+   	position: relative;
+	}
+    .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+        float: left;
+    }
+    .col-sm-1 {
+        width: 8.33%;
+    }
+    .col-sm-2 {
+        width: 16.66%;
+    }
+    .col-sm-3 {
+        width: 25%;
+    }
+    .col-sm-4 {
+        width: 33.33%;
+    }
+    .col-sm-5 {
+        width: 41.66%;
+    }
+    .col-sm-6 {
+        width: 50%;
+    }
+    .col-sm-7 {
+        width: 58.33%;
+    }
+    .col-sm-8 {
+        width: 66.66%;
+    }
+    .col-sm-9 {
+        width: 74.99%;
+    }
+    .col-sm-10 {
+        width: 83.33%;
+    }
+    .col-sm-11 {
+        width: 91.66%;
+    }
+    .col-sm-12 {
+        width: 100%;
+    }
+}
